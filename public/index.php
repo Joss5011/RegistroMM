@@ -2,6 +2,7 @@
 //incluir los archivos de configuracion
 require_once '../config/database.php';
 require_once '../app/core/Database.php';
+require_once '../app/controllers/UserController.php';
 
 // crear una instancia de la clase Database y conectar
 $database = new Database($host, $db_name, $username, $password);
@@ -12,3 +13,20 @@ if ($pdo){
 } else {
     echo "Error al conectar";
 }
+
+$userController = new UserController($pdo);
+
+// Rutas simples
+// if ($_SERVER['REQUEST_URI'] == '/users') {
+//     $users = $userController->listUsers();
+//     require_once '../app/views/listUsers.php';
+// } elseif ($_SERVER['REQUEST_URI'] == '/create_user' && $_SERVER['REQUEST_METHOD'] == 'POST') {
+//     $username = $_POST['username'];
+//     $password = $_POST['password'];
+//     $userController->createUser($username, $password);
+//     header('Location: /users');
+// } else {
+//     echo "Página no encontrada";
+// }
+
+?>

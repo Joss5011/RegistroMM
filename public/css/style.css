@@ -1,0 +1,13 @@
+
+h8 {
+    font-family: 'Arial', sans-serif; /* Familia de fuentes */
+    font-size: 36px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    margin: 20px 0; /* Espacio exterior (margen) arriba y abajo */
+    padding: 10px; /* Espacio interior (relleno) */
+    background-color: #f4f4f4; /* Color de fondo */
+    border: 2px solid #ddd; /* Borde */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
